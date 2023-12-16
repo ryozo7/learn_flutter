@@ -9,10 +9,13 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(title: Text("hello flutter!")),
-          body: Center(
-            child: Text("hello world!"),
-          )),
+        appBar: AppBar(
+          title: Text("hello flutter!"),
+        ),
+        body: Center(
+          child: Text("hello world!"),
+        ),
+      ),
     );
   }
 }
