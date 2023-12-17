@@ -1,37 +1,52 @@
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:toonflix/widgets/Button.dart';
-import 'package:toonflix/widgets/currency_card.dart';
-import 'package:toonflix/widgets/screens/home_screen.dart';
+import 'package:toonflix/screens/home_screen.dart';
+// import 'package:flutter/services.dart';
+// import 'package:toonflix/widgets/Button.dart';
+// import 'package:toonflix/widgets/currency_card.dart';
+// import 'package:toonflix/widgets/screens/home_screen.dart';
 
 void main() {
   runApp(const App());
 }
 
-class App extends StatefulWidget {
+class App extends StatelessWidget {
   const App({super.key});
 
   @override
-  State<App> createState() => _AppState();
-}
-
-class _AppState extends State<App> {
-  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        theme: ThemeData(
-          textTheme: const TextTheme(
-            displayLarge: TextStyle(
-              color: Color(0xFF232B55),
-            ),
-          ),
-          cardColor: const Color(0XFFF4EDDB),
-          scaffoldBackgroundColor: const Color(0xFFE7626C),
-        ),
-        home: const HomeScreen());
+    return const MaterialApp(
+      home: HomeScreen(),
+    );
   }
 }
+
+// --------------------------------------------
+
+// class App extends StatefulWidget {
+//   const App({super.key});
+
+//   @override
+//   State<App> createState() => _AppState();
+// }
+
+// class _AppState extends State<App> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//         theme: ThemeData(
+//           textTheme: const TextTheme(
+//             displayLarge: TextStyle(
+//               color: Color(0xFF232B55),
+//             ),
+//           ),
+//           cardColor: const Color(0XFFF4EDDB),
+//           scaffoldBackgroundColor: const Color(0xFFE7626C),
+//         ),
+//         home: const HomeScreen());
+//   }
+// }
+// --------------------------------------------
 
 // class App extends StatefulWidget {
 //   const App({super.key});
@@ -112,6 +127,8 @@ class _AppState extends State<App> {
 //     );
 //   }
 // }
+
+// --------------------------------------------
 
 // class App extends StatelessWidget {
 //   const App({super.key});
